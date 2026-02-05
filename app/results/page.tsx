@@ -114,6 +114,7 @@ export default function ResultsPage() {
   useEffect(() => {
     fetchResults();
     fetchStats();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [employeeNameFilter, cityFilter, sortBy, sortOrder, page]);
 
   const handleSort = (column: string) => {
